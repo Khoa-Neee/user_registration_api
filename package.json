@@ -1,0 +1,14 @@
+{
+  "name": "user_registration_api",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "install:all": "npm install --workspaces",
+    "dev:client": "npm --workspace client run dev",
+    "dev:server": "npm --workspace server run start:dev",
+    "build": "npm --workspace client run build && npm --workspace server run build"
+  }
+}
